@@ -18,7 +18,7 @@ public class LoveCalculatorInitializer extends AbstractAnnotationConfigDispatche
 
 	@Override
 	protected String[] getServletMappings() {
-		String[]  arr = {"/mywebsite.com/*"};
+		String[]  arr = {"/"};
 		return arr;
 	}
 
