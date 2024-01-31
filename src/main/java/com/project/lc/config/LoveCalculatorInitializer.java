@@ -12,7 +12,7 @@ public class LoveCalculatorInitializer extends AbstractAnnotationConfigDispatche
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		Class arr[] = {LoveCalculatorAppConfig.class};
+		Class<?> arr[] = {LoveCalculatorAppConfig.class};
 		return arr;
 	}
 

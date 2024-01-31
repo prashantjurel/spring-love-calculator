@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,9 @@
 			</p>
 			<input type="submit" value="Calculate">
 		</div>
+		
 	</form>
+	<hr>
 
 </body>
 </html>

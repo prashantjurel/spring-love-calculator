@@ -1,7 +1,7 @@
 package com.project.lc.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.project.lc.model.FormDetailDTO;
@@ -14,11 +14,9 @@ public class LcAppController {
 		return "homePage";
 
 	}
-
+	
 	@RequestMapping("/result")
-	public String showResultPage(FormDetailDTO formDetailDTO, Model model) {
-
-		model.addAttribute("userInfo", formDetailDTO);
+	public String showResultPage(@ModelAttribute("userInfo") FormDetailDTO formDetailDTO) {
 		return "resultPage";
 	}
 
