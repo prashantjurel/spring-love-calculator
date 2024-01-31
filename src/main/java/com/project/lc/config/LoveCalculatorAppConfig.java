@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-@EnableWebMvc
+
 @Configuration
+@EnableWebMvc
 @ComponentScan(basePackages = "com.project.lc.controllers")
 public class LoveCalculatorAppConfig {
 	 

@@ -1,6 +1,8 @@
 package com.project.lc.config;
 
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
 
 public class LoveCalculatorInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
