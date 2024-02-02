@@ -46,6 +46,12 @@
 				Male <form:radiobutton path="genderString" value ="male"/>
 				Female <form:radiobutton path="genderString" value ="female"/>
 			</p>
+			
+			<p>
+				<label>Communication Details : </label><br>
+				Email :  <form:input path="communicationDTO.emailString" /><br>
+				Phone Number : <form:input path="communicationDTO.phone" />
+			</p>
 			<p>
 				<input type="submit" value="Register" />
 			</p>

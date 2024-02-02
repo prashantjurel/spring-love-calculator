@@ -22,5 +22,7 @@ ${temp}
 </c:forEach>
 <br>
 Gender: ${userReg.genderString} <br>
+Email: ${userReg.communicationDTO.emailString} <br>
+Phone Number: ${userReg.communicationDTO.phone} <br>
 </body>
 </html>

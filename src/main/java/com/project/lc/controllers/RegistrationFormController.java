@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.project.lc.model.CommunicationDTO;
+import com.project.lc.model.Phone;
 import com.project.lc.model.UserRegistrationInfo;
 
 @Controller
