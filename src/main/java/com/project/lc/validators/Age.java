@@ -19,7 +19,7 @@ public @interface Age {
 	
 	int max() default 60;
 	
-	String message()default "Please enter age between 18-60";
+	String message()default "{invalidAgeMessage}";
 	
 	Class<?>[] groups() default { };
 
