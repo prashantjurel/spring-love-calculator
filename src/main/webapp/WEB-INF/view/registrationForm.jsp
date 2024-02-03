@@ -6,11 +6,20 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Love Calculator</title>
+<style type="text/css">
+.error {
+	color: red;
+	text-align: left;
+	position: fixed;
+	margin-left: 30px;
+}
+</style>
 </head>
 <body>
 	<h1 align="center">LOVE CALCULATOR</h1>
 	<hr>
-	<form:form action="registration-success" method="GET" modelAttribute="userReg">
+	<form:form action="registration-success" method="GET"
+		modelAttribute="userReg">
 		<div align="center">
 			<p>
 				<label for="name">Name : </label>
@@ -24,6 +33,13 @@
 				<label for="password">Password : </label>
 				<form:input type="password" path="passwordString" id="password" />
 			</p>
+
+			<p>
+				<label for="age">Age : </label>
+				<form:input path="ageInteger" id="age" />
+				<form:errors path ="ageInteger" cssClass="error"/>
+			</p>
+
 			<p>
 				<label for="country">Country : </label>
 				<form:select path="countryString">
@@ -35,22 +51,28 @@
 				</form:select>
 			</p>
 			<p>
-				<label for="hobby">Hobbies : </label>
-				Cricket <form:checkbox path="hobbiesStrings" value="cricket"/>
-				Reading <form:checkbox path="hobbiesStrings" value="reading"/>
-				Travel <form:checkbox path="hobbiesStrings" value="travel"/>
-				Programming <form:checkbox path="hobbiesStrings" value="programming"/>
+				<label for="hobby">Hobbies : </label> Cricket
+				<form:checkbox path="hobbiesStrings" value="cricket" />
+				Reading
+				<form:checkbox path="hobbiesStrings" value="reading" />
+				Travel
+				<form:checkbox path="hobbiesStrings" value="travel" />
+				Programming
+				<form:checkbox path="hobbiesStrings" value="programming" />
 			</p>
 			<p>
-				<label>Gender : </label>
-				Male <form:radiobutton path="genderString" value ="male"/>
-				Female <form:radiobutton path="genderString" value ="female"/>
+				<label>Gender : </label> Male
+				<form:radiobutton path="genderString" value="male" />
+				Female
+				<form:radiobutton path="genderString" value="female" />
 			</p>
-			
+
 			<p>
-				<label>Communication Details : </label><br>
-				Email :  <form:input path="communicationDTO.emailString" /><br>
-				Phone Number : <form:input path="communicationDTO.phone" />
+				<label>Communication Details : </label><br> 
+				Email :
+				<form:input path="communicationDTO.emailString" />
+				Phone Number :
+				<form:input path="communicationDTO.phone" />
 			</p>
 			<p>
 				<input type="submit" value="Register" />

@@ -24,13 +24,6 @@ public class LcAppController {
 	@RequestMapping("/result")
 	public String showResultPage(@Valid @ModelAttribute("userInfo") FormDetailDTO formDetailDTO,
 			BindingResult bindingResult) {
-		
-		if(bindingResult.hasErrors()) {
-			List<ObjectError> errors = bindingResult.getAllErrors();
-			for(ObjectError temp: errors) {
-				System.out.println(temp);
-			}
-		}
 
 		return bindingResult.hasErrors() ? "homePage" : "resultPage";
 

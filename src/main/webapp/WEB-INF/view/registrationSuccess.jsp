@@ -15,6 +15,7 @@
 Name: ${userReg.nameString} <br>
 Username: ${userReg.usernameString} <br>
 Password: ${userReg.passwordString} <br>
+Age: ${userReg.ageInteger} <br>
 Country: ${userReg.countryString} <br>
 Hobbies:  
 <c:forEach var="temp" items="${userReg.hobbiesStrings}">
