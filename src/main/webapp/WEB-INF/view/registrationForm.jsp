@@ -73,6 +73,7 @@
 				<form:input path="communicationDTO.emailString" />
 				Phone Number :
 				<form:input path="communicationDTO.phone" />
+				<form:errors path="communicationDTO" cssClass="error" />
 			</p>
 			<p>
 				<input type="submit" value="Register" />

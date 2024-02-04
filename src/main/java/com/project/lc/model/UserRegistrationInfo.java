@@ -1,6 +1,7 @@
 package com.project.lc.model;
 
 import com.project.lc.validators.Age;
+import com.project.lc.validators.ValidPhone;
 
 public class UserRegistrationInfo {
 
@@ -12,7 +13,7 @@ public class UserRegistrationInfo {
 	private String genderString;
 	@Age
 	private Integer ageInteger;
-
+	@ValidPhone
 	private CommunicationDTO communicationDTO;
 
 	public String getUsernameString() {

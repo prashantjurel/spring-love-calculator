@@ -3,7 +3,6 @@ package com.project.lc.model;
 public class CommunicationDTO {
 
 	private String emailString;
-	
 	private Phone phone;
 
 	public String getEmailString() {
